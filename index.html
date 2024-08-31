@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aishwarya Portfolio</title>
+    <link href="port.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="header">
+        <div class="header-container">
+            <nav>
+                <img src="newlogo.jpg" width="200px" height="130px">
+                  <ul class="link-list">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#about">Skills</a></li>
+                    <li><a href="#Projects">Projects</a></li>
+                    <li><a href="#contact">Contacts</a></li>
+                  </ul>
+            </nav>
+            <div class="intro-div">
+                <p>FULL STACK PYTHON DEVELOPER</p>
+                <h1>Hello, I am <span>Aishwarya</span><br>from Ahmednagar</h1>
+            </div>
+        </div>    
+    </div>
+<!--About Us-->
+<div class="about-div" id="about">
+    <div class="about-div-container">
+        <div class="div-profile-photo"><img src="Ai.jpg" width="350px" height="400px"></div>
+        <div class="intro-session">
+            <h1>About Me!</h1>
+            <p>I am Aishwarya Datir from Ahmednagar. I have completed BE Computer from Savitribai Phule Pune University.
+               I am highly motivated and detail oriented fresher Python developer having passion for developing innovative solutions. 
+               Seeking an entry-level position in the Software industry where I can utilize my skills and knowledge to learn and grow within the company.
+                 
+            </p>
+             
+            <div class="about-tab-div">
+                <div class="about-link active-link" onclick="openTabContent('skills')">
+                    Skills
+                </div>
+
+                <div class="about-link" onclick="openTabContent('education')">
+                    Education
+                </div>    
+                <div class="about-link" onclick="openTabContent('experiance')">
+                    Experience
+                </div>  
+                <div class="about-link" onclick="openTabContent('certification')">
+                    Certification
+                </div>            
+            </div>
+            <!--Tab Content-->
+            <div class="about-tab-content active-content" id="skills">
+                <ul>
+                    <li><span>Full Stack Developer</span><br>
+                        Python Web-Application
+                    </li>
+                    <li><span>BackEnd Developer</span><br>
+                        Django
+                    </li>
+                    <li><span>FrontEnd Developer</span><br>
+                        HTML CSS JavaScript
+                    </li>
+                </ul>
+            </div>
+            <div class="about-tab-content" id="education">
+                <ul>
+                    <li><span>BE(computer)</span><br>
+                        Savitribai phule pune university
+                    </li>
+                    <li><span>Diploma</span><br>
+                        MSBTE
+                    </li>
+                    <li><span>SSC</span><br>
+                        Pravara Madhyamic Vidyalay
+                    </li>
+                </ul>
+            </div>
+            <div class="about-tab-content" id="experiance">
+                <ul>
+                    <li><span>Python developer</span><br>
+                        Technocipher it solutions
+                    </li>
+                    <li><span>FrontEnd developer</span><br>
+                        HTML CSS JavaScript 
+                    </li>
+                    <li><span>BackEnd developer</span><br>
+                        Django
+                    </li>
+                </ul>
+            </div>
+            <div class="about-tab-content" id="certification">
+                <ul>
+                    <li><span>Full stack Python developer</span><br>
+                        Technocipher it solutions
+                    </li>
+                    <li><span>Full Stack Developer</span><br>
+                        Adhyayan It Training and Placement
+                    </li>
+                    <li><span>Python Data Science</span><br>
+                        Sai Infotech Services
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+    </div>
+
+</div> 
+<!-- Project/Services-->  
+<div id="Projects">
+    <div class="project-container">
+        <h1 class="caption"> My Projects</h1>
+        <div class="projects-list">
+            <div>
+                <h2>SmartKart</h2>
+                <p> This project was able to sale the product such as mobiles and Laptops kind of e-commerce platform 
+                    where in backend we have used sqlite3 database in frontend we have used html, css, javascript and 
+                    Bootstrap in connectivity we have used the concept of django and django ORM.
+                </p>
+                <a href="#">Read More</a>
+            </div>
+            <div>
+                <h2>Secure File Storage for local Data using Homomorphic Encryption</h2>
+                <p> When the data transferred to the local server we use standard encryption methods to secure the operations and the storage of the data. 
+                    Our basic concept is to encrypt the data before send it to the local provider. 
+                    But the last one needs to decrypt data at every operation. 
+                    The data owner will share there file if they save it on as public mode.
+                    If share file want to access by another user then they need a secret key.
+                    Secret key is used to decrypt the downloaded file at the time of download
+                    .
+                </p>
+                <a href="#">Read More</a>
+            </div>
+            <div>
+                <h2>IOT Home Based Automation</h2>
+                <p> The user view the status of the appliances on the mobile.
+                </p>
+                <a href="#">Read More</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Contact Session-->
+<div id="contact">
+    <div class="container">
+        <div class="contact-row">
+            <div class="contact-left">
+                <h2 id="heading-contact"> Contact Me!</h2>
+                <p><img src="email.png" height="25px" width="25px"> abd@gmail.com</p><br>
+                <p><img src="phone.png" height="25px" width="25px"> +91 0000000000 </p>
+                <div class="social-media-icons">
+                    <a href="https://www.linkedin.com/in/aishwarya-datir/" target="_blank"><img src="linkdin.png" height="35px" width="35px"></a>                    
+                    <a href="https://github.com/AishwaryaDatir" target="_blank"><img src="github.png" height="35px" width="35px"></a>
+                    <a href="#"><img src="instagram.png" height="35px" width="35px"></a>
+                </div><br>
+                <div class="Resume download">
+                    <a href="Aishwarya_Datir.pdf" class="btn btn2">Download Resume</a>
+                </div>
+            </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your name" required>
+                        <input type="email" name="Email" placeholder="Your email" required>
+                        <textarea name="Message" placeholder="Your Message" cols="6" rows="6"></textarea>
+                        <input type="submit" id="submit">
+                    </form>
+             </div>   
+                
+    </div>
+   
+</div>
+<div>
+    <p style="text-align: center;">© Copyright by Aishwarya Made with ❤️ </p>
+</div>
+
+<script src="portscript.js"></script>    
+</body>
+</html>
